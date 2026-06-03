@@ -1,0 +1,625 @@
+order_id,order_date,sku,product_name,factory,baseline_lead_time_days,actual_lead_time_days,variance_days,variance_pct,anomaly_type,severity
+PO-2024001,2024-01-01,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2024002,2024-01-01,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,28,7,33.3,moderate_delay,medium
+PO-2024003,2024-01-01,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2024004,2024-01-01,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2024005,2024-01-01,CAP-002,33mm Flat Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2024006,2024-01-01,LBL-001,Front Label 16oz,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2024007,2024-01-01,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2024008,2024-01-01,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,12,2,20.0,,
+PO-2024009,2024-01-01,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2024010,2024-01-01,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2024011,2024-01-01,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,14,2,16.7,,
+PO-2024012,2024-01-01,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2024101,2024-01-08,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,27,6,28.6,moderate_delay,medium
+PO-2024102,2024-01-08,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2024103,2024-01-08,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2024104,2024-01-08,CAP-001,28mm Sport Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2024105,2024-01-08,CAP-002,33mm Flat Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2024106,2024-01-08,LBL-001,Front Label 16oz,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2024107,2024-01-08,LBL-002,Front Label 1L,Shanghai PrintPro,10,14,4,40.0,moderate_delay,medium
+PO-2024108,2024-01-08,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,6,-4,-40.0,early_delivery,low
+PO-2024109,2024-01-08,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2024110,2024-01-08,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2024111,2024-01-08,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2024112,2024-01-08,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2024201,2024-01-15,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2024202,2024-01-15,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,16,-5,-23.8,early_delivery,low
+PO-2024203,2024-01-15,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,41,20,95.2,spike,high
+PO-2024204,2024-01-15,CAP-001,28mm Sport Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2024205,2024-01-15,CAP-002,33mm Flat Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2024206,2024-01-15,LBL-001,Front Label 16oz,Shanghai PrintPro,10,10,0,0.0,,
+PO-2024207,2024-01-15,LBL-002,Front Label 1L,Shanghai PrintPro,10,13,3,30.0,,
+PO-2024208,2024-01-15,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,12,2,20.0,,
+PO-2024209,2024-01-15,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2024210,2024-01-15,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,24,6,33.3,moderate_delay,medium
+PO-2024211,2024-01-15,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2024212,2024-01-15,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,6,-1,-14.3,,
+PO-2024301,2024-01-22,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2024302,2024-01-22,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2024303,2024-01-22,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,29,8,38.1,moderate_delay,medium
+PO-2024304,2024-01-22,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2024305,2024-01-22,CAP-002,33mm Flat Cap,Dongguan CapTech,14,26,12,85.7,spike,high
+PO-2024306,2024-01-22,LBL-001,Front Label 16oz,Shanghai PrintPro,10,11,1,10.0,,
+PO-2024307,2024-01-22,LBL-002,Front Label 1L,Shanghai PrintPro,10,22,12,120.0,spike,high
+PO-2024308,2024-01-22,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2024309,2024-01-22,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2024310,2024-01-22,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2024311,2024-01-22,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,14,2,16.7,,
+PO-2024312,2024-01-22,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,6,-1,-14.3,,
+PO-2024401,2024-01-29,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,11,-10,-47.6,early_delivery,low
+PO-2024402,2024-01-29,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2024403,2024-01-29,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,36,15,71.4,spike,high
+PO-2024404,2024-01-29,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2024405,2024-01-29,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2024406,2024-01-29,LBL-001,Front Label 16oz,Shanghai PrintPro,10,12,2,20.0,,
+PO-2024407,2024-01-29,LBL-002,Front Label 1L,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2024408,2024-01-29,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,8,-2,-20.0,early_delivery,low
+PO-2024409,2024-01-29,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2024410,2024-01-29,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2024411,2024-01-29,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,18,6,50.0,moderate_delay,medium
+PO-2024412,2024-01-29,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,7,0,0.0,,
+PO-2024501,2024-02-05,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2024502,2024-02-05,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2024503,2024-02-05,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,39,18,85.7,spike,high
+PO-2024504,2024-02-05,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2024505,2024-02-05,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2024506,2024-02-05,LBL-001,Front Label 16oz,Shanghai PrintPro,10,19,9,90.0,spike,high
+PO-2024507,2024-02-05,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2024508,2024-02-05,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2024509,2024-02-05,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,26,8,44.4,moderate_delay,medium
+PO-2024510,2024-02-05,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,26,8,44.4,moderate_delay,medium
+PO-2024511,2024-02-05,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,12,0,0.0,,
+PO-2024512,2024-02-05,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2024601,2024-02-12,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,16,-5,-23.8,early_delivery,low
+PO-2024602,2024-02-12,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,29,8,38.1,moderate_delay,medium
+PO-2024603,2024-02-12,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2024604,2024-02-12,CAP-001,28mm Sport Cap,Dongguan CapTech,14,7,-7,-50.0,early_delivery,low
+PO-2024605,2024-02-12,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2024606,2024-02-12,LBL-001,Front Label 16oz,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2024607,2024-02-12,LBL-002,Front Label 1L,Shanghai PrintPro,10,13,3,30.0,,
+PO-2024608,2024-02-12,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,12,2,20.0,,
+PO-2024609,2024-02-12,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2024610,2024-02-12,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,36,18,100.0,spike,high
+PO-2024611,2024-02-12,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,14,2,16.7,,
+PO-2024612,2024-02-12,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,moderate_delay,medium
+PO-2024701,2024-02-19,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2024702,2024-02-19,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,15,-6,-28.6,early_delivery,low
+PO-2024703,2024-02-19,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2024704,2024-02-19,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2024705,2024-02-19,CAP-002,33mm Flat Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2024706,2024-02-19,LBL-001,Front Label 16oz,Shanghai PrintPro,10,12,2,20.0,,
+PO-2024707,2024-02-19,LBL-002,Front Label 1L,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2024708,2024-02-19,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,,
+PO-2024709,2024-02-19,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2024710,2024-02-19,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2024711,2024-02-19,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,20,8,66.7,spike,high
+PO-2024712,2024-02-19,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2024801,2024-02-26,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2024802,2024-02-26,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2024803,2024-02-26,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2024804,2024-02-26,CAP-001,28mm Sport Cap,Dongguan CapTech,14,21,7,50.0,moderate_delay,medium
+PO-2024805,2024-02-26,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2024806,2024-02-26,LBL-001,Front Label 16oz,Shanghai PrintPro,10,10,0,0.0,,
+PO-2024807,2024-02-26,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2024808,2024-02-26,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,16,6,60.0,spike,high
+PO-2024809,2024-02-26,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2024810,2024-02-26,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2024811,2024-02-26,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,18,6,50.0,moderate_delay,medium
+PO-2024812,2024-02-26,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,6,-1,-14.3,,
+PO-2024901,2024-03-04,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2024902,2024-03-04,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2024903,2024-03-04,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2024904,2024-03-04,CAP-001,28mm Sport Cap,Dongguan CapTech,14,23,9,64.3,spike,high
+PO-2024905,2024-03-04,CAP-002,33mm Flat Cap,Dongguan CapTech,14,22,8,57.1,moderate_delay,medium
+PO-2024906,2024-03-04,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,,
+PO-2024907,2024-03-04,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,early_delivery,low
+PO-2024908,2024-03-04,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,8,-2,-20.0,early_delivery,low
+PO-2024909,2024-03-04,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,31,13,72.2,spike,high
+PO-2024910,2024-03-04,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2024911,2024-03-04,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,29,17,141.7,spike,high
+PO-2024912,2024-03-04,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2025001,2024-03-11,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,12,-9,-42.9,early_delivery,low
+PO-2025002,2024-03-11,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,30,9,42.9,moderate_delay,medium
+PO-2025003,2024-03-11,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2025004,2024-03-11,CAP-001,28mm Sport Cap,Dongguan CapTech,14,9,-5,-35.7,early_delivery,low
+PO-2025005,2024-03-11,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2025006,2024-03-11,LBL-001,Front Label 16oz,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2025007,2024-03-11,LBL-002,Front Label 1L,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2025008,2024-03-11,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,,
+PO-2025009,2024-03-11,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2025010,2024-03-11,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2025011,2024-03-11,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,25,13,108.3,spike,high
+PO-2025012,2024-03-11,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,,
+PO-2025101,2024-03-18,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2025102,2024-03-18,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2025103,2024-03-18,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2025104,2024-03-18,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2025105,2024-03-18,CAP-002,33mm Flat Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2025106,2024-03-18,LBL-001,Front Label 16oz,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2025107,2024-03-18,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2025108,2024-03-18,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2025109,2024-03-18,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,10,-8,-44.4,early_delivery,low
+PO-2025110,2024-03-18,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2025111,2024-03-18,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2025112,2024-03-18,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,7,0,0.0,,
+PO-2025201,2024-03-25,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2025202,2024-03-25,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2025203,2024-03-25,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,17,-4,-19.0,early_delivery,low
+PO-2025204,2024-03-25,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2025205,2024-03-25,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2025206,2024-03-25,LBL-001,Front Label 16oz,Shanghai PrintPro,10,8,-2,-20.0,early_delivery,low
+PO-2025207,2024-03-25,LBL-002,Front Label 1L,Shanghai PrintPro,10,19,9,90.0,spike,high
+PO-2025208,2024-03-25,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,12,2,20.0,,
+PO-2025209,2024-03-25,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2025210,2024-03-25,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,13,-5,-27.8,early_delivery,low
+PO-2025211,2024-03-25,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2025212,2024-03-25,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,moderate_delay,medium
+PO-2025301,2024-04-01,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2025302,2024-04-01,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2025303,2024-04-01,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,27,6,28.6,moderate_delay,medium
+PO-2025304,2024-04-01,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2025305,2024-04-01,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2025306,2024-04-01,LBL-001,Front Label 16oz,Shanghai PrintPro,10,10,0,0.0,,
+PO-2025307,2024-04-01,LBL-002,Front Label 1L,Shanghai PrintPro,10,10,0,0.0,,
+PO-2025308,2024-04-01,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,24,14,140.0,spike,high
+PO-2025309,2024-04-01,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2025310,2024-04-01,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,23,5,27.8,moderate_delay,medium
+PO-2025311,2024-04-01,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2025312,2024-04-01,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,7,0,0.0,,
+PO-2025401,2024-04-08,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2025402,2024-04-08,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2025403,2024-04-08,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2025404,2024-04-08,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2025405,2024-04-08,CAP-002,33mm Flat Cap,Dongguan CapTech,14,29,15,107.1,spike,high
+PO-2025406,2024-04-08,LBL-001,Front Label 16oz,Shanghai PrintPro,10,15,5,50.0,moderate_delay,medium
+PO-2025407,2024-04-08,LBL-002,Front Label 1L,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2025408,2024-04-08,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2025409,2024-04-08,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,42,24,133.3,spike,high
+PO-2025410,2024-04-08,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,43,25,138.9,spike,high
+PO-2025411,2024-04-08,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2025412,2024-04-08,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,7,0,0.0,,
+PO-2025501,2024-04-15,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,33,12,57.1,moderate_delay,medium
+PO-2025502,2024-04-15,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2025503,2024-04-15,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,33,12,57.1,moderate_delay,medium
+PO-2025504,2024-04-15,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2025505,2024-04-15,CAP-002,33mm Flat Cap,Dongguan CapTech,14,10,-4,-28.6,early_delivery,low
+PO-2025506,2024-04-15,LBL-001,Front Label 16oz,Shanghai PrintPro,10,16,6,60.0,spike,high
+PO-2025507,2024-04-15,LBL-002,Front Label 1L,Shanghai PrintPro,10,14,4,40.0,moderate_delay,medium
+PO-2025508,2024-04-15,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2025509,2024-04-15,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,42,24,133.3,spike,high
+PO-2025510,2024-04-15,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2025511,2024-04-15,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,10,-2,-16.7,,
+PO-2025512,2024-04-15,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,13,6,85.7,spike,high
+PO-2025601,2024-04-22,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,30,9,42.9,moderate_delay,medium
+PO-2025602,2024-04-22,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2025603,2024-04-22,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2025604,2024-04-22,CAP-001,28mm Sport Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2025605,2024-04-22,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2025606,2024-04-22,LBL-001,Front Label 16oz,Shanghai PrintPro,10,6,-4,-40.0,early_delivery,low
+PO-2025607,2024-04-22,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2025608,2024-04-22,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,12,2,20.0,,
+PO-2025609,2024-04-22,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2025610,2024-04-22,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2025611,2024-04-22,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,12,0,0.0,,
+PO-2025612,2024-04-22,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,,
+PO-2025701,2024-04-29,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2025702,2024-04-29,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,29,8,38.1,moderate_delay,medium
+PO-2025703,2024-04-29,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,11,-10,-47.6,early_delivery,low
+PO-2025704,2024-04-29,CAP-001,28mm Sport Cap,Dongguan CapTech,14,25,11,78.6,spike,high
+PO-2025705,2024-04-29,CAP-002,33mm Flat Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2025706,2024-04-29,LBL-001,Front Label 16oz,Shanghai PrintPro,10,12,2,20.0,,
+PO-2025707,2024-04-29,LBL-002,Front Label 1L,Shanghai PrintPro,10,13,3,30.0,,
+PO-2025708,2024-04-29,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2025709,2024-04-29,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2025710,2024-04-29,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,12,-6,-33.3,early_delivery,low
+PO-2025711,2024-04-29,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,10,-2,-16.7,,
+PO-2025712,2024-04-29,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,7,0,0.0,,
+PO-2025801,2024-05-06,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2025802,2024-05-06,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2025803,2024-05-06,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2025804,2024-05-06,CAP-001,28mm Sport Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2025805,2024-05-06,CAP-002,33mm Flat Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2025806,2024-05-06,LBL-001,Front Label 16oz,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2025807,2024-05-06,LBL-002,Front Label 1L,Shanghai PrintPro,10,10,0,0.0,,
+PO-2025808,2024-05-06,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2025809,2024-05-06,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2025810,2024-05-06,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2025811,2024-05-06,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,12,0,0.0,,
+PO-2025812,2024-05-06,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,8,1,14.3,,
+PO-2025901,2024-05-13,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2025902,2024-05-13,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2025903,2024-05-13,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2025904,2024-05-13,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2025905,2024-05-13,CAP-002,33mm Flat Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2025906,2024-05-13,LBL-001,Front Label 16oz,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2025907,2024-05-13,LBL-002,Front Label 1L,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2025908,2024-05-13,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2025909,2024-05-13,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2025910,2024-05-13,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2025911,2024-05-13,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2025912,2024-05-13,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2026001,2024-05-20,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2026002,2024-05-20,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2026003,2024-05-20,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2026004,2024-05-20,CAP-001,28mm Sport Cap,Dongguan CapTech,14,33,19,135.7,spike,high
+PO-2026005,2024-05-20,CAP-002,33mm Flat Cap,Dongguan CapTech,14,32,18,128.6,spike,high
+PO-2026006,2024-05-20,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,,
+PO-2026007,2024-05-20,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2026008,2024-05-20,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2026009,2024-05-20,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2026010,2024-05-20,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2026011,2024-05-20,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,13,1,8.3,,
+PO-2026012,2024-05-20,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2026101,2024-05-27,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,42,21,100.0,spike,high
+PO-2026102,2024-05-27,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,42,21,100.0,spike,high
+PO-2026103,2024-05-27,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2026104,2024-05-27,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2026105,2024-05-27,CAP-002,33mm Flat Cap,Dongguan CapTech,14,19,5,35.7,moderate_delay,medium
+PO-2026106,2024-05-27,LBL-001,Front Label 16oz,Shanghai PrintPro,10,14,4,40.0,moderate_delay,medium
+PO-2026107,2024-05-27,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2026108,2024-05-27,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2026109,2024-05-27,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2026110,2024-05-27,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2026111,2024-05-27,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2026112,2024-05-27,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2026201,2024-06-03,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2026202,2024-06-03,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2026203,2024-06-03,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2026204,2024-06-03,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2026205,2024-06-03,CAP-002,33mm Flat Cap,Dongguan CapTech,14,19,5,35.7,moderate_delay,medium
+PO-2026206,2024-06-03,LBL-001,Front Label 16oz,Shanghai PrintPro,10,16,6,60.0,moderate_delay,medium
+PO-2026207,2024-06-03,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2026208,2024-06-03,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2026209,2024-06-03,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,11,-7,-38.9,early_delivery,low
+PO-2026210,2024-06-03,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2026211,2024-06-03,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2026212,2024-06-03,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,,
+PO-2026301,2024-06-10,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,43,22,104.8,spike,high
+PO-2026302,2024-06-10,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2026303,2024-06-10,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2026304,2024-06-10,CAP-001,28mm Sport Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2026305,2024-06-10,CAP-002,33mm Flat Cap,Dongguan CapTech,14,22,8,57.1,moderate_delay,medium
+PO-2026306,2024-06-10,LBL-001,Front Label 16oz,Shanghai PrintPro,10,25,15,150.0,spike,high
+PO-2026307,2024-06-10,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2026308,2024-06-10,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,,
+PO-2026309,2024-06-10,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2026310,2024-06-10,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2026311,2024-06-10,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,12,0,0.0,,
+PO-2026312,2024-06-10,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,6,-1,-14.3,,
+PO-2026401,2024-06-17,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2026402,2024-06-17,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,29,8,38.1,moderate_delay,medium
+PO-2026403,2024-06-17,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,32,11,52.4,moderate_delay,medium
+PO-2026404,2024-06-17,CAP-001,28mm Sport Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2026405,2024-06-17,CAP-002,33mm Flat Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2026406,2024-06-17,LBL-001,Front Label 16oz,Shanghai PrintPro,10,10,0,0.0,,
+PO-2026407,2024-06-17,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2026408,2024-06-17,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,15,5,50.0,moderate_delay,medium
+PO-2026409,2024-06-17,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,28,10,55.6,moderate_delay,medium
+PO-2026410,2024-06-17,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2026411,2024-06-17,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2026412,2024-06-17,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2026501,2024-06-24,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2026502,2024-06-24,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2026503,2024-06-24,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,27,6,28.6,moderate_delay,medium
+PO-2026504,2024-06-24,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2026505,2024-06-24,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2026506,2024-06-24,LBL-001,Front Label 16oz,Shanghai PrintPro,10,5,-5,-50.0,early_delivery,low
+PO-2026507,2024-06-24,LBL-002,Front Label 1L,Shanghai PrintPro,10,10,0,0.0,,
+PO-2026508,2024-06-24,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,11,1,10.0,,
+PO-2026509,2024-06-24,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2026510,2024-06-24,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2026511,2024-06-24,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2026512,2024-06-24,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2026601,2024-07-01,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,32,11,52.4,moderate_delay,medium
+PO-2026602,2024-07-01,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2026603,2024-07-01,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,30,9,42.9,moderate_delay,medium
+PO-2026604,2024-07-01,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2026605,2024-07-01,CAP-002,33mm Flat Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2026606,2024-07-01,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,,
+PO-2026607,2024-07-01,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2026608,2024-07-01,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2026609,2024-07-01,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,12,-6,-33.3,early_delivery,low
+PO-2026610,2024-07-01,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,27,9,50.0,moderate_delay,medium
+PO-2026611,2024-07-01,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2026612,2024-07-01,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2026701,2024-07-08,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2026702,2024-07-08,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,30,9,42.9,moderate_delay,medium
+PO-2026703,2024-07-08,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,31,10,47.6,moderate_delay,medium
+PO-2026704,2024-07-08,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2026705,2024-07-08,CAP-002,33mm Flat Cap,Dongguan CapTech,14,18,4,28.6,moderate_delay,medium
+PO-2026706,2024-07-08,LBL-001,Front Label 16oz,Shanghai PrintPro,10,18,8,80.0,spike,high
+PO-2026707,2024-07-08,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2026708,2024-07-08,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2026709,2024-07-08,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2026710,2024-07-08,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2026711,2024-07-08,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,12,0,0.0,,
+PO-2026712,2024-07-08,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,,
+PO-2026801,2024-07-15,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2026802,2024-07-15,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2026803,2024-07-15,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,11,-10,-47.6,early_delivery,low
+PO-2026804,2024-07-15,CAP-001,28mm Sport Cap,Dongguan CapTech,14,20,6,42.9,moderate_delay,medium
+PO-2026805,2024-07-15,CAP-002,33mm Flat Cap,Dongguan CapTech,14,21,7,50.0,moderate_delay,medium
+PO-2026806,2024-07-15,LBL-001,Front Label 16oz,Shanghai PrintPro,10,11,1,10.0,,
+PO-2026807,2024-07-15,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2026808,2024-07-15,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2026809,2024-07-15,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2026810,2024-07-15,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2026811,2024-07-15,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,14,2,16.7,,
+PO-2026812,2024-07-15,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,8,1,14.3,,
+PO-2026901,2024-07-22,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,14,-7,-33.3,early_delivery,low
+PO-2026902,2024-07-22,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2026903,2024-07-22,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2026904,2024-07-22,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2026905,2024-07-22,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2026906,2024-07-22,LBL-001,Front Label 16oz,Shanghai PrintPro,10,16,6,60.0,moderate_delay,medium
+PO-2026907,2024-07-22,LBL-002,Front Label 1L,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2026908,2024-07-22,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,11,1,10.0,,
+PO-2026909,2024-07-22,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2026910,2024-07-22,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,12,-6,-33.3,early_delivery,low
+PO-2026911,2024-07-22,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,10,-2,-16.7,,
+PO-2026912,2024-07-22,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,moderate_delay,medium
+PO-2027001,2024-07-29,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2027002,2024-07-29,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2027003,2024-07-29,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2027004,2024-07-29,CAP-001,28mm Sport Cap,Dongguan CapTech,14,9,-5,-35.7,early_delivery,low
+PO-2027005,2024-07-29,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2027006,2024-07-29,LBL-001,Front Label 16oz,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027007,2024-07-29,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2027008,2024-07-29,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027009,2024-07-29,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2027010,2024-07-29,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2027011,2024-07-29,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,13,1,8.3,,
+PO-2027012,2024-07-29,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2027101,2024-08-05,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2027102,2024-08-05,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2027103,2024-08-05,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2027104,2024-08-05,CAP-001,28mm Sport Cap,Dongguan CapTech,14,22,8,57.1,moderate_delay,medium
+PO-2027105,2024-08-05,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2027106,2024-08-05,LBL-001,Front Label 16oz,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027107,2024-08-05,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2027108,2024-08-05,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,12,2,20.0,,
+PO-2027109,2024-08-05,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2027110,2024-08-05,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2027111,2024-08-05,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,7,-5,-41.7,early_delivery,low
+PO-2027112,2024-08-05,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,,
+PO-2027201,2024-08-12,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,11,-10,-47.6,early_delivery,low
+PO-2027202,2024-08-12,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,31,10,47.6,moderate_delay,medium
+PO-2027203,2024-08-12,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2027204,2024-08-12,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2027205,2024-08-12,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2027206,2024-08-12,LBL-001,Front Label 16oz,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027207,2024-08-12,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027208,2024-08-12,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2027209,2024-08-12,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2027210,2024-08-12,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2027211,2024-08-12,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2027212,2024-08-12,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,early_delivery,low
+PO-2027301,2024-08-19,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2027302,2024-08-19,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,28,7,33.3,moderate_delay,medium
+PO-2027303,2024-08-19,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2027304,2024-08-19,CAP-001,28mm Sport Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2027305,2024-08-19,CAP-002,33mm Flat Cap,Dongguan CapTech,14,18,4,28.6,moderate_delay,medium
+PO-2027306,2024-08-19,LBL-001,Front Label 16oz,Shanghai PrintPro,10,10,0,0.0,,
+PO-2027307,2024-08-19,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2027308,2024-08-19,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,6,-4,-40.0,early_delivery,low
+PO-2027309,2024-08-19,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2027310,2024-08-19,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2027311,2024-08-19,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,13,1,8.3,,
+PO-2027312,2024-08-19,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,9,2,28.6,,
+PO-2027401,2024-08-26,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2027402,2024-08-26,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,31,10,47.6,moderate_delay,medium
+PO-2027403,2024-08-26,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2027404,2024-08-26,CAP-001,28mm Sport Cap,Dongguan CapTech,14,11,-3,-21.4,early_delivery,low
+PO-2027405,2024-08-26,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2027406,2024-08-26,LBL-001,Front Label 16oz,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2027407,2024-08-26,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2027408,2024-08-26,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2027409,2024-08-26,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2027410,2024-08-26,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,32,14,77.8,spike,high
+PO-2027411,2024-08-26,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2027412,2024-08-26,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,11,4,57.1,moderate_delay,medium
+PO-2027501,2024-09-02,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2027502,2024-09-02,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2027503,2024-09-02,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2027504,2024-09-02,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2027505,2024-09-02,CAP-002,33mm Flat Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2027506,2024-09-02,LBL-001,Front Label 16oz,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2027507,2024-09-02,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027508,2024-09-02,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2027509,2024-09-02,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2027510,2024-09-02,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,42,24,133.3,spike,high
+PO-2027511,2024-09-02,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,14,2,16.7,,
+PO-2027512,2024-09-02,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2027601,2024-09-09,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2027602,2024-09-09,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2027603,2024-09-09,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2027604,2024-09-09,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2027605,2024-09-09,CAP-002,33mm Flat Cap,Dongguan CapTech,14,14,0,0.0,,
+PO-2027606,2024-09-09,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,,
+PO-2027607,2024-09-09,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2027608,2024-09-09,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2027609,2024-09-09,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2027610,2024-09-09,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2027611,2024-09-09,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,10,-2,-16.7,,
+PO-2027612,2024-09-09,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2027701,2024-09-16,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2027702,2024-09-16,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2027703,2024-09-16,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2027704,2024-09-16,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2027705,2024-09-16,CAP-002,33mm Flat Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2027706,2024-09-16,LBL-001,Front Label 16oz,Shanghai PrintPro,10,6,-4,-40.0,early_delivery,low
+PO-2027707,2024-09-16,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027708,2024-09-16,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,12,2,20.0,,
+PO-2027709,2024-09-16,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2027710,2024-09-16,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,33,15,83.3,spike,high
+PO-2027711,2024-09-16,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,17,5,41.7,moderate_delay,medium
+PO-2027712,2024-09-16,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,early_delivery,low
+PO-2027801,2024-09-23,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,28,7,33.3,moderate_delay,medium
+PO-2027802,2024-09-23,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2027803,2024-09-23,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2027804,2024-09-23,CAP-001,28mm Sport Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2027805,2024-09-23,CAP-002,33mm Flat Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2027806,2024-09-23,LBL-001,Front Label 16oz,Shanghai PrintPro,10,12,2,20.0,,
+PO-2027807,2024-09-23,LBL-002,Front Label 1L,Shanghai PrintPro,10,14,4,40.0,moderate_delay,medium
+PO-2027808,2024-09-23,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,8,-2,-20.0,early_delivery,low
+PO-2027809,2024-09-23,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,10,-8,-44.4,early_delivery,low
+PO-2027810,2024-09-23,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2027811,2024-09-23,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2027812,2024-09-23,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,8,1,14.3,,
+PO-2027901,2024-09-30,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2027902,2024-09-30,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,31,10,47.6,moderate_delay,medium
+PO-2027903,2024-09-30,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2027904,2024-09-30,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2027905,2024-09-30,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2027906,2024-09-30,LBL-001,Front Label 16oz,Shanghai PrintPro,10,20,10,100.0,spike,high
+PO-2027907,2024-09-30,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2027908,2024-09-30,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2027909,2024-09-30,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2027910,2024-09-30,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,9,-9,-50.0,early_delivery,low
+PO-2027911,2024-09-30,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,16,4,33.3,moderate_delay,medium
+PO-2027912,2024-09-30,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,8,1,14.3,,
+PO-2028001,2024-10-07,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2028002,2024-10-07,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,50,29,138.1,spike,high
+PO-2028003,2024-10-07,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2028004,2024-10-07,CAP-001,28mm Sport Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2028005,2024-10-07,CAP-002,33mm Flat Cap,Dongguan CapTech,14,23,9,64.3,spike,high
+PO-2028006,2024-10-07,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,,
+PO-2028007,2024-10-07,LBL-002,Front Label 1L,Shanghai PrintPro,10,10,0,0.0,,
+PO-2028008,2024-10-07,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,7,-3,-30.0,early_delivery,low
+PO-2028009,2024-10-07,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,16,-2,-11.1,,
+PO-2028010,2024-10-07,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,27,9,50.0,moderate_delay,medium
+PO-2028011,2024-10-07,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2028012,2024-10-07,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2028101,2024-10-14,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2028102,2024-10-14,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2028103,2024-10-14,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2028104,2024-10-14,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2028105,2024-10-14,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2028106,2024-10-14,LBL-001,Front Label 16oz,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2028107,2024-10-14,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2028108,2024-10-14,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2028109,2024-10-14,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2028110,2024-10-14,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2028111,2024-10-14,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,13,1,8.3,,
+PO-2028112,2024-10-14,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2028201,2024-10-21,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,42,21,100.0,spike,high
+PO-2028202,2024-10-21,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2028203,2024-10-21,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2028204,2024-10-21,CAP-001,28mm Sport Cap,Dongguan CapTech,14,11,-3,-21.4,early_delivery,low
+PO-2028205,2024-10-21,CAP-002,33mm Flat Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2028206,2024-10-21,LBL-001,Front Label 16oz,Shanghai PrintPro,10,11,1,10.0,,
+PO-2028207,2024-10-21,LBL-002,Front Label 1L,Shanghai PrintPro,10,18,8,80.0,spike,high
+PO-2028208,2024-10-21,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,11,1,10.0,,
+PO-2028209,2024-10-21,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2028210,2024-10-21,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2028211,2024-10-21,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2028212,2024-10-21,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2028301,2024-10-28,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2028302,2024-10-28,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2028303,2024-10-28,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,33,12,57.1,moderate_delay,medium
+PO-2028304,2024-10-28,CAP-001,28mm Sport Cap,Dongguan CapTech,14,32,18,128.6,spike,high
+PO-2028305,2024-10-28,CAP-002,33mm Flat Cap,Dongguan CapTech,14,22,8,57.1,moderate_delay,medium
+PO-2028306,2024-10-28,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2028307,2024-10-28,LBL-002,Front Label 1L,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2028308,2024-10-28,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2028309,2024-10-28,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2028310,2024-10-28,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,27,9,50.0,moderate_delay,medium
+PO-2028311,2024-10-28,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,10,-2,-16.7,,
+PO-2028312,2024-10-28,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,15,8,114.3,spike,high
+PO-2028401,2024-11-04,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2028402,2024-11-04,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,21,0,0.0,,
+PO-2028403,2024-11-04,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,27,6,28.6,moderate_delay,medium
+PO-2028404,2024-11-04,CAP-001,28mm Sport Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2028405,2024-11-04,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2028406,2024-11-04,LBL-001,Front Label 16oz,Shanghai PrintPro,10,12,2,20.0,,
+PO-2028407,2024-11-04,LBL-002,Front Label 1L,Shanghai PrintPro,10,19,9,90.0,spike,high
+PO-2028408,2024-11-04,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,10,0,0.0,,
+PO-2028409,2024-11-04,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,24,6,33.3,moderate_delay,medium
+PO-2028410,2024-11-04,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,26,8,44.4,moderate_delay,medium
+PO-2028411,2024-11-04,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,18,6,50.0,moderate_delay,medium
+PO-2028412,2024-11-04,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2028501,2024-11-11,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2028502,2024-11-11,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2028503,2024-11-11,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,47,26,123.8,spike,high
+PO-2028504,2024-11-11,CAP-001,28mm Sport Cap,Dongguan CapTech,14,11,-3,-21.4,early_delivery,low
+PO-2028505,2024-11-11,CAP-002,33mm Flat Cap,Dongguan CapTech,14,19,5,35.7,moderate_delay,medium
+PO-2028506,2024-11-11,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2028507,2024-11-11,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2028508,2024-11-11,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,,
+PO-2028509,2024-11-11,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2028510,2024-11-11,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2028511,2024-11-11,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,6,-6,-50.0,early_delivery,low
+PO-2028512,2024-11-11,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2028601,2024-11-18,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2028602,2024-11-18,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2028603,2024-11-18,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2028604,2024-11-18,CAP-001,28mm Sport Cap,Dongguan CapTech,14,15,1,7.1,,
+PO-2028605,2024-11-18,CAP-002,33mm Flat Cap,Dongguan CapTech,14,26,12,85.7,spike,high
+PO-2028606,2024-11-18,LBL-001,Front Label 16oz,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2028607,2024-11-18,LBL-002,Front Label 1L,Shanghai PrintPro,10,8,-2,-20.0,,
+PO-2028608,2024-11-18,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,11,1,10.0,,
+PO-2028609,2024-11-18,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2028610,2024-11-18,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,31,13,72.2,spike,high
+PO-2028611,2024-11-18,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,15,3,25.0,,
+PO-2028612,2024-11-18,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,early_delivery,low
+PO-2028701,2024-11-25,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2028702,2024-11-25,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,27,6,28.6,moderate_delay,medium
+PO-2028703,2024-11-25,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2028704,2024-11-25,CAP-001,28mm Sport Cap,Dongguan CapTech,14,21,7,50.0,moderate_delay,medium
+PO-2028705,2024-11-25,CAP-002,33mm Flat Cap,Dongguan CapTech,14,8,-6,-42.9,early_delivery,low
+PO-2028706,2024-11-25,LBL-001,Front Label 16oz,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2028707,2024-11-25,LBL-002,Front Label 1L,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2028708,2024-11-25,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,17,7,70.0,spike,high
+PO-2028709,2024-11-25,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2028710,2024-11-25,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,39,21,116.7,spike,high
+PO-2028711,2024-11-25,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,12,0,0.0,,
+PO-2028712,2024-11-25,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,,
+PO-2028801,2024-12-02,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,16,-5,-23.8,early_delivery,low
+PO-2028802,2024-12-02,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2028803,2024-12-02,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,23,2,9.5,,
+PO-2028804,2024-12-02,CAP-001,28mm Sport Cap,Dongguan CapTech,14,7,-7,-50.0,early_delivery,low
+PO-2028805,2024-12-02,CAP-002,33mm Flat Cap,Dongguan CapTech,14,13,-1,-7.1,,
+PO-2028806,2024-12-02,LBL-001,Front Label 16oz,Shanghai PrintPro,10,13,3,30.0,moderate_delay,medium
+PO-2028807,2024-12-02,LBL-002,Front Label 1L,Shanghai PrintPro,10,14,4,40.0,moderate_delay,medium
+PO-2028808,2024-12-02,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2028809,2024-12-02,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,17,-1,-5.6,,
+PO-2028810,2024-12-02,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,26,8,44.4,moderate_delay,medium
+PO-2028811,2024-12-02,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2028812,2024-12-02,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,5,-2,-28.6,early_delivery,low
+PO-2028901,2024-12-09,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,27,6,28.6,moderate_delay,medium
+PO-2028902,2024-12-09,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,36,15,71.4,spike,high
+PO-2028903,2024-12-09,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,20,-1,-4.8,,
+PO-2028904,2024-12-09,CAP-001,28mm Sport Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2028905,2024-12-09,CAP-002,33mm Flat Cap,Dongguan CapTech,14,12,-2,-14.3,,
+PO-2028906,2024-12-09,LBL-001,Front Label 16oz,Shanghai PrintPro,10,11,1,10.0,,
+PO-2028907,2024-12-09,LBL-002,Front Label 1L,Shanghai PrintPro,10,13,3,30.0,,
+PO-2028908,2024-12-09,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,11,1,10.0,,
+PO-2028909,2024-12-09,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,26,8,44.4,moderate_delay,medium
+PO-2028910,2024-12-09,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,20,2,11.1,,
+PO-2028911,2024-12-09,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,14,2,16.7,,
+PO-2028912,2024-12-09,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,10,3,42.9,,
+PO-2029001,2024-12-16,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2029002,2024-12-16,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,19,-2,-9.5,,
+PO-2029003,2024-12-16,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2029004,2024-12-16,CAP-001,28mm Sport Cap,Dongguan CapTech,14,28,14,100.0,spike,high
+PO-2029005,2024-12-16,CAP-002,33mm Flat Cap,Dongguan CapTech,14,17,3,21.4,,
+PO-2029006,2024-12-16,LBL-001,Front Label 16oz,Shanghai PrintPro,10,17,7,70.0,spike,high
+PO-2029007,2024-12-16,LBL-002,Front Label 1L,Shanghai PrintPro,10,12,2,20.0,,
+PO-2029008,2024-12-16,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2029009,2024-12-16,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2029010,2024-12-16,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,21,3,16.7,,
+PO-2029011,2024-12-16,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,14,2,16.7,,
+PO-2029012,2024-12-16,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,8,1,14.3,,
+PO-2029101,2024-12-23,PKG-001,16oz PET Bottle,Shenzhen Plastics Co.,21,22,1,4.8,,
+PO-2029102,2024-12-23,PKG-002,1L PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2029103,2024-12-23,PKG-003,500ml PET Bottle,Shenzhen Plastics Co.,21,24,3,14.3,,
+PO-2029104,2024-12-23,CAP-001,28mm Sport Cap,Dongguan CapTech,14,16,2,14.3,,
+PO-2029105,2024-12-23,CAP-002,33mm Flat Cap,Dongguan CapTech,14,19,5,35.7,moderate_delay,medium
+PO-2029106,2024-12-23,LBL-001,Front Label 16oz,Shanghai PrintPro,10,9,-1,-10.0,,
+PO-2029107,2024-12-23,LBL-002,Front Label 1L,Shanghai PrintPro,10,11,1,10.0,,
+PO-2029108,2024-12-23,LBL-003,Wrap Label 500ml,Shanghai PrintPro,10,13,3,30.0,,
+PO-2029109,2024-12-23,CRD-001,12-pack Cardboard,Guangzhou BoxCo,18,19,1,5.6,,
+PO-2029110,2024-12-23,CRD-002,24-pack Cardboard,Guangzhou BoxCo,18,18,0,0.0,,
+PO-2029111,2024-12-23,SHK-001,Shrink Wrap Film,Ningbo PolyPack,12,11,-1,-8.3,,
+PO-2029112,2024-12-23,PLT-001,Wooden Pallet,Chengdu WoodWorks,7,8,1,14.3,,
