@@ -9,354 +9,234 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg-primary: #ffffff;
-      --bg-secondary: #f5f5f3;
-      --bg-tertiary: #ebebea;
-      --text-primary: #1a1a18;
-      --text-secondary: #6b6b67;
-      --text-tertiary: #9b9b96;
-      --border-light: rgba(0,0,0,0.12);
-      --border-mid: rgba(0,0,0,0.22);
-      --border-strong: rgba(0,0,0,0.35);
-      --radius-md: 8px;
-      --radius-lg: 12px;
-      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --bg: #f5f5f3;
+      --surface: #ffffff;
+      --surface2: #f5f5f3;
+      --surface3: #ebebea;
+      --text: #1a1a18;
+      --text2: #6b6b67;
+      --text3: #9b9b96;
+      --border: rgba(0,0,0,0.12);
+      --border2: rgba(0,0,0,0.22);
+      --border3: rgba(0,0,0,0.35);
+      --r-md: 8px;
+      --r-lg: 12px;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg-primary: #1c1c1a;
-        --bg-secondary: #242422;
-        --bg-tertiary: #2e2e2b;
-        --text-primary: #f0efea;
-        --text-secondary: #9b9b96;
-        --text-tertiary: #6b6b67;
-        --border-light: rgba(255,255,255,0.1);
-        --border-mid: rgba(255,255,255,0.18);
-        --border-strong: rgba(255,255,255,0.28);
+        --bg: #1a1a18;
+        --surface: #242422;
+        --surface2: #2a2a28;
+        --surface3: #323230;
+        --text: #f0efea;
+        --text2: #9b9b96;
+        --text3: #6b6b67;
+        --border: rgba(255,255,255,0.10);
+        --border2: rgba(255,255,255,0.18);
+        --border3: rgba(255,255,255,0.28);
       }
     }
 
-    body {
-      font-family: var(--font);
-      background: var(--bg-tertiary);
-      color: var(--text-primary);
-      min-height: 100vh;
-      padding: 2rem 1rem;
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem; }
+    .page { max-width: 920px; margin: 0 auto; }
 
-    .page { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 20px; font-weight: 500; margin-bottom: 4px; }
+    .subtitle { font-size: 14px; color: var(--text2); margin-bottom: 2rem; }
 
-    /* Header */
-    .header { margin-bottom: 2rem; }
-    .header h1 { font-size: 20px; font-weight: 500; color: var(--text-primary); }
-    .header p { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+    .card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
 
-    /* API key bar */
-    .api-bar {
-      background: var(--bg-primary);
-      border: 0.5px solid var(--border-light);
-      border-radius: var(--radius-lg);
-      padding: 14px 16px;
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .api-bar label { font-size: 13px; color: var(--text-secondary); white-space: nowrap; }
-    .api-bar input[type="password"] {
-      flex: 1;
-      min-width: 200px;
-      font-size: 13px;
-      padding: 6px 10px;
-      border: 0.5px solid var(--border-mid);
-      border-radius: var(--radius-md);
-      background: var(--bg-secondary);
-      color: var(--text-primary);
-      outline: none;
-    }
-    .api-bar input:focus { border-color: var(--border-strong); }
-    .api-note { font-size: 12px; color: var(--text-tertiary); width: 100%; }
+    /* API key */
+    .api-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .api-row label { font-size: 13px; color: var(--text2); white-space: nowrap; }
+    .api-row input[type="password"] { flex: 1; min-width: 200px; font-size: 13px; padding: 7px 10px; border: 0.5px solid var(--border2); border-radius: var(--r-md); background: var(--surface2); color: var(--text); outline: none; }
+    .api-row input:focus { border-color: var(--border3); }
+    .api-note { font-size: 12px; color: var(--text3); margin-top: 8px; }
 
-    /* Upload area */
-    .upload-area {
-      background: var(--bg-primary);
-      border: 1.5px dashed var(--border-mid);
-      border-radius: var(--radius-lg);
-      padding: 2.5rem;
+    /* Upload zone */
+    .upload-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1rem; }
+    @media (max-width: 520px) { .upload-grid { grid-template-columns: 1fr; } }
+    .drop-zone {
+      border: 1.5px dashed var(--border2);
+      border-radius: var(--r-lg);
+      padding: 1.5rem;
       text-align: center;
-      margin-bottom: 1.5rem;
       cursor: pointer;
-      transition: border-color 0.15s;
+      transition: border-color 0.15s, background 0.15s;
+      background: var(--surface);
     }
-    .upload-area:hover { border-color: var(--border-strong); }
-    .upload-area i { font-size: 28px; color: var(--text-tertiary); display: block; margin-bottom: 8px; }
-    .upload-area p { font-size: 14px; color: var(--text-secondary); }
-    .upload-area input { display: none; }
+    .drop-zone:hover, .drop-zone.over { border-color: var(--border3); background: var(--surface2); }
+    .drop-zone.loaded { border-color: #1D9E75; border-style: solid; }
+    .drop-zone i { font-size: 24px; color: var(--text3); display: block; margin-bottom: 8px; }
+    .drop-zone.loaded i { color: #1D9E75; }
+    .drop-zone p { font-size: 13px; color: var(--text2); }
+    .drop-zone p strong { color: var(--text); }
+    .drop-zone input { display: none; }
+    .file-name { font-size: 12px; color: #1D9E75; margin-top: 4px; }
+
+    .run-bar { display: flex; gap: 10px; align-items: center; }
 
     /* Stats */
-    .stat-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 10px;
-      margin-bottom: 1.5rem;
-    }
-    .stat {
-      background: var(--bg-primary);
-      border: 0.5px solid var(--border-light);
-      border-radius: var(--radius-md);
-      padding: 14px 16px;
-    }
-    .stat-val { font-size: 24px; font-weight: 500; color: var(--text-primary); }
-    .stat-lbl { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+    .stat { background: var(--surface2); border-radius: var(--r-md); padding: 14px; }
+    .stat-val { font-size: 22px; font-weight: 500; }
+    .stat-lbl { font-size: 12px; color: var(--text2); margin-top: 3px; }
 
-    /* Section label */
-    .section-label {
-      font-size: 11px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-tertiary);
-      margin-bottom: 10px;
-    }
+    /* Section */
+    .section-lbl { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text3); margin-bottom: 10px; }
 
     /* Filters */
     .filter-row { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
-    .filter-btn {
-      font-size: 12px;
-      padding: 5px 14px;
-      border-radius: 20px;
-      border: 0.5px solid var(--border-mid);
-      background: transparent;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: background 0.12s;
-    }
-    .filter-btn.active {
-      background: var(--bg-secondary);
-      color: var(--text-primary);
-      border-color: var(--border-strong);
-    }
+    .filter-btn { font-size: 12px; padding: 5px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: transparent; color: var(--text2); cursor: pointer; }
+    .filter-btn.active { background: var(--surface2); color: var(--text); border-color: var(--border3); }
 
     /* Anomaly list */
-    .anomaly-list {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      margin-bottom: 1.5rem;
-      max-height: 320px;
-      overflow-y: auto;
-      padding-right: 2px;
-    }
+    .anomaly-list { display: flex; flex-direction: column; gap: 6px; max-height: 320px; overflow-y: auto; margin-bottom: 1.25rem; padding-right: 2px; }
     .anomaly-row {
-      background: var(--bg-primary);
-      border: 0.5px solid var(--border-light);
-      border-radius: var(--radius-md);
-      padding: 12px 14px;
+      background: var(--surface);
+      border: 0.5px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 11px 14px;
       display: flex;
       align-items: center;
       gap: 12px;
       cursor: pointer;
       transition: border-color 0.12s;
     }
-    .anomaly-row:hover { border-color: var(--border-mid); }
-    .anomaly-row.selected { border-color: var(--border-strong); background: var(--bg-secondary); }
-
-    .sev-badge {
-      font-size: 11px;
-      font-weight: 500;
-      padding: 2px 9px;
-      border-radius: 20px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
+    .anomaly-row:hover { border-color: var(--border2); }
+    .anomaly-row.selected { border-color: var(--border3); background: var(--surface2); }
+    .sev { font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; }
     .sev-high { background: #FCEBEB; color: #A32D2D; }
     .sev-medium { background: #FAEEDA; color: #854F0B; }
     .sev-low { background: #E1F5EE; color: #0F6E56; }
-
-    .anomaly-info { flex: 1; min-width: 0; }
-    .anomaly-name { font-size: 13px; font-weight: 500; color: var(--text-primary); }
-    .anomaly-name span { font-weight: 400; color: var(--text-secondary); }
-    .anomaly-meta { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
-    .anomaly-variance { font-size: 13px; font-weight: 500; flex-shrink: 0; }
-    .var-positive { color: #A32D2D; }
-    .var-negative { color: #0F6E56; }
+    .anom-info { flex: 1; min-width: 0; }
+    .anom-name { font-size: 13px; font-weight: 500; }
+    .anom-name span { font-weight: 400; color: var(--text2); }
+    .anom-meta { font-size: 12px; color: var(--text2); margin-top: 2px; }
+    .anom-var { font-size: 13px; font-weight: 500; flex-shrink: 0; }
+    .pos { color: #A32D2D; }
+    .neg { color: #0F6E56; }
 
     /* Email panel */
-    .email-panel {
-      background: var(--bg-primary);
-      border: 0.5px solid var(--border-light);
-      border-radius: var(--radius-lg);
-      padding: 1.25rem 1.5rem;
-    }
-    .email-prompt {
-      text-align: center;
-      padding: 2rem;
-      color: var(--text-secondary);
-      font-size: 14px;
-    }
-    .email-prompt i { font-size: 24px; display: block; margin-bottom: 8px; color: var(--text-tertiary); }
-    .email-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 1rem; }
-    .email-fields { flex: 1; }
-    .email-field { display: flex; gap: 10px; font-size: 13px; margin-bottom: 5px; }
-    .email-field-lbl { color: var(--text-tertiary); width: 36px; flex-shrink: 0; }
-    .email-field-val { color: var(--text-primary); }
-    .email-divider { border: none; border-top: 0.5px solid var(--border-light); margin: 1rem 0; }
-    .email-body {
-      font-size: 14px;
-      color: var(--text-primary);
-      line-height: 1.75;
-      white-space: pre-wrap;
-      min-height: 80px;
-    }
-    .email-body.placeholder { color: var(--text-tertiary); font-style: italic; }
+    .email-prompt { text-align: center; padding: 2rem; color: var(--text2); font-size: 14px; }
+    .email-prompt i { font-size: 22px; color: var(--text3); display: block; margin-bottom: 6px; }
+    .email-meta { margin-bottom: 1rem; }
+    .ef { display: flex; gap: 10px; font-size: 13px; margin-bottom: 5px; }
+    .ef-lbl { color: var(--text3); width: 36px; flex-shrink: 0; }
+    .divider { border: none; border-top: 0.5px solid var(--border); margin: 1rem 0; }
+    .email-body { font-size: 14px; color: var(--text); line-height: 1.75; white-space: pre-wrap; min-height: 60px; }
+    .email-body.placeholder { color: var(--text3); font-style: italic; }
 
     /* Buttons */
-    .btn {
-      font-size: 13px;
-      padding: 7px 16px;
-      border-radius: var(--radius-md);
-      border: 0.5px solid var(--border-mid);
-      background: transparent;
-      color: var(--text-primary);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: background 0.12s;
-      white-space: nowrap;
-    }
-    .btn:hover { background: var(--bg-secondary); }
-    .btn:active { transform: scale(0.98); }
-    .btn-primary {
-      background: var(--text-primary);
-      color: var(--bg-primary);
-      border-color: var(--text-primary);
-    }
-    .btn-primary:hover { opacity: 0.88; background: var(--text-primary); }
+    .btn { font-size: 13px; padding: 7px 16px; border-radius: var(--r-md); border: 0.5px solid var(--border2); background: transparent; color: var(--text); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .btn:hover { background: var(--surface2); }
+    .btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .btn-primary:hover { opacity: 0.85; background: var(--text); }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
     /* Loading */
-    .loading {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 13px;
-      color: var(--text-secondary);
-      padding: 1rem 0;
-    }
-    .spinner {
-      width: 16px;
-      height: 16px;
-      border: 2px solid var(--border-light);
-      border-top-color: var(--text-secondary);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      flex-shrink: 0;
-    }
+    .loading { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text2); padding: 1rem 0; }
+    .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--text2); border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     .btn-row { display: flex; gap: 8px; margin-top: 1rem; flex-wrap: wrap; }
-    .empty { font-size: 13px; color: var(--text-secondary); padding: 0.5rem 0; }
+    .empty { font-size: 13px; color: var(--text2); padding: 0.5rem 0; }
 
-    /* Toast */
-    .toast {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: var(--text-primary);
-      color: var(--bg-primary);
-      font-size: 13px;
-      padding: 10px 18px;
-      border-radius: var(--radius-md);
-      opacity: 0;
-      transform: translateY(8px);
-      transition: opacity 0.2s, transform 0.2s;
-      pointer-events: none;
-      z-index: 100;
-    }
+    /* Steps indicator */
+    .steps { display: flex; gap: 6px; align-items: center; font-size: 13px; color: var(--text2); margin-bottom: 1rem; flex-wrap: wrap; }
+    .step { display: flex; align-items: center; gap: 6px; }
+    .step-num { width: 22px; height: 22px; border-radius: 50%; border: 0.5px solid var(--border2); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; flex-shrink: 0; }
+    .step.done .step-num { background: #1D9E75; border-color: #1D9E75; color: white; }
+    .step.active .step-num { background: var(--text); border-color: var(--text); color: var(--bg); }
+    .step-arrow { color: var(--text3); font-size: 12px; }
+
+    .toast { position: fixed; bottom: 24px; right: 24px; background: var(--text); color: var(--bg); font-size: 13px; padding: 10px 18px; border-radius: var(--r-md); opacity: 0; transform: translateY(8px); transition: opacity 0.2s, transform 0.2s; pointer-events: none; z-index: 100; }
     .toast.show { opacity: 1; transform: translateY(0); }
+
+    .analysis-log { background: var(--surface2); border-radius: var(--r-md); padding: 12px 14px; font-size: 12px; color: var(--text2); font-family: monospace; white-space: pre-wrap; max-height: 120px; overflow-y: auto; margin-bottom: 1rem; line-height: 1.6; }
   </style>
 </head>
 <body>
 <div class="page">
 
-  <div class="header">
-    <h1>Lead time anomaly agent</h1>
-    <p>Detects anomalies in supplier lead times and drafts factory emails using Claude AI</p>
+  <h1>Lead time anomaly agent</h1>
+  <p class="subtitle">Upload two raw files — the agent joins them, calculates variances, flags anomalies, and drafts factory emails</p>
+
+  <!-- Step indicator -->
+  <div class="steps" id="steps">
+    <div class="step active" id="step1"><div class="step-num">1</div><span>Upload files</span></div>
+    <span class="step-arrow">›</span>
+    <div class="step" id="step2"><div class="step-num">2</div><span>Agent analyzes</span></div>
+    <span class="step-arrow">›</span>
+    <div class="step" id="step3"><div class="step-num">3</div><span>Review & draft emails</span></div>
   </div>
 
   <!-- API Key -->
-  <div class="api-bar">
-    <label for="api-key"><i class="ti ti-key" style="font-size:15px; vertical-align:-2px;" aria-hidden="true"></i> Anthropic API key</label>
-    <input type="password" id="api-key" placeholder="sk-ant-..." autocomplete="off">
-    <span class="api-note">Your key stays in the browser and is never stored or sent anywhere except directly to api.anthropic.com. Get one at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a>.</span>
+  <div class="card">
+    <div class="api-row">
+      <label for="api-key"><i class="ti ti-key" style="font-size:15px;vertical-align:-2px" aria-hidden="true"></i> Anthropic API key</label>
+      <input type="password" id="api-key" placeholder="sk-ant-..." autocomplete="off">
+    </div>
+    <p class="api-note">Stays in your browser. Sent only to api.anthropic.com. Get one at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a>.</p>
   </div>
 
-  <!-- Upload -->
-  <div class="upload-area" id="upload-area" onclick="document.getElementById('csv-input').click()">
-    <i class="ti ti-file-spreadsheet" aria-hidden="true"></i>
-    <p>Click to upload <strong>lead_times.csv</strong></p>
-    <p style="font-size:12px; margin-top:4px; color:var(--text-tertiary);">Or drag and drop</p>
-    <input type="file" id="csv-input" accept=".csv">
+  <!-- File upload -->
+  <div class="upload-grid">
+    <div class="drop-zone" id="zone-planned" onclick="document.getElementById('input-planned').click()">
+      <i class="ti ti-file-spreadsheet" aria-hidden="true"></i>
+      <p><strong>Planned lead times</strong></p>
+      <p>planned_lead_times.csv</p>
+      <div class="file-name" id="fname-planned"></div>
+      <input type="file" id="input-planned" accept=".csv">
+    </div>
+    <div class="drop-zone" id="zone-actual" onclick="document.getElementById('input-actual').click()">
+      <i class="ti ti-file-spreadsheet" aria-hidden="true"></i>
+      <p><strong>Actual lead times</strong></p>
+      <p>actual_lead_times.csv</p>
+      <div class="file-name" id="fname-actual"></div>
+      <input type="file" id="input-actual" accept=".csv">
+    </div>
   </div>
 
-  <!-- Stats (hidden until data loaded) -->
-  <div class="stat-row" id="stats" style="display:none;">
-    <div class="stat"><div class="stat-val" id="s-total">—</div><div class="stat-lbl">Total orders</div></div>
-    <div class="stat"><div class="stat-val" id="s-anomalies">—</div><div class="stat-lbl">Anomalies flagged</div></div>
-    <div class="stat"><div class="stat-val" id="s-high">—</div><div class="stat-lbl">High severity</div></div>
-    <div class="stat"><div class="stat-val" id="s-factories">—</div><div class="stat-lbl">Factories affected</div></div>
+  <div class="run-bar" style="margin-bottom:1.5rem;">
+    <button class="btn btn-primary" id="run-btn" onclick="runAgent()" disabled>
+      <i class="ti ti-player-play" aria-hidden="true"></i> Run agent
+    </button>
+    <span id="run-status" style="font-size:13px;color:var(--text2);">Upload both files to begin</span>
   </div>
 
-  <!-- Anomaly list -->
-  <div id="anomaly-section" style="display:none;">
-    <p class="section-label">Flagged anomalies</p>
-    <div class="filter-row" id="filter-row"></div>
-    <div class="anomaly-list" id="anomaly-list"></div>
-  </div>
+  <!-- Results -->
+  <div id="results" style="display:none;">
 
-  <!-- Email panel -->
-  <div id="email-section" style="display:none;">
-    <p class="section-label">Draft email</p>
-    <div class="email-panel" id="email-panel">
-      <div class="email-prompt">
-        <i class="ti ti-arrow-up" aria-hidden="true"></i>
-        Select an anomaly above to draft an email
+    <div class="stat-grid" id="stat-grid"></div>
+
+    <div class="analysis-log" id="analysis-log"></div>
+
+    <div class="card" style="padding:1.25rem 1.5rem;">
+      <p class="section-lbl">Flagged anomalies</p>
+      <div class="filter-row" id="filter-row"></div>
+      <div class="anomaly-list" id="anomaly-list"></div>
+
+      <p class="section-lbl">Draft email</p>
+      <div id="email-panel">
+        <div class="email-prompt">
+          <i class="ti ti-arrow-up" aria-hidden="true"></i>
+          Select an anomaly above to draft an email
+        </div>
       </div>
     </div>
   </div>
 
 </div>
-
-<div class="toast" id="toast">Copied to clipboard</div>
+<div class="toast" id="toast">Copied</div>
 
 <script>
-  let allRows = [];
-  let allAnomalies = [];
+  let plannedData = null;
+  let actualData = null;
+  let analyzed = [];
   let selectedIdx = null;
   let activeFilter = 'all';
   let generatedEmail = '';
-
-  // --- Drag and drop ---
-  const uploadArea = document.getElementById('upload-area');
-  uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.style.borderColor = 'var(--border-strong)'; });
-  uploadArea.addEventListener('dragleave', () => { uploadArea.style.borderColor = ''; });
-  uploadArea.addEventListener('drop', e => {
-    e.preventDefault();
-    uploadArea.style.borderColor = '';
-    const file = e.dataTransfer.files[0];
-    if (file) readFile(file);
-  });
-  document.getElementById('csv-input').addEventListener('change', e => {
-    if (e.target.files[0]) readFile(e.target.files[0]);
-  });
-
-  function readFile(file) {
-    const reader = new FileReader();
-    reader.onload = ev => processCSV(ev.target.result);
-    reader.readAsText(file);
-  }
 
   function parseCSV(text) {
     const lines = text.trim().split('\n');
@@ -369,20 +249,205 @@
     });
   }
 
-  function processCSV(text) {
-    allRows = parseCSV(text);
-    allAnomalies = allRows.filter(r => r.anomaly_type && r.anomaly_type !== '');
+  function setupZone(zoneId, inputId, fnameId, key) {
+    const zone = document.getElementById(zoneId);
+    const input = document.getElementById(inputId);
 
-    document.getElementById('s-total').textContent = allRows.length;
-    document.getElementById('s-anomalies').textContent = allAnomalies.length;
-    document.getElementById('s-high').textContent = allAnomalies.filter(r => r.severity === 'high').length;
-    document.getElementById('s-factories').textContent = new Set(allAnomalies.map(r => r.factory)).size;
-    document.getElementById('stats').style.display = 'grid';
-    document.getElementById('anomaly-section').style.display = 'block';
-    document.getElementById('email-section').style.display = 'block';
+    zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+    zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+    zone.addEventListener('drop', e => {
+      e.preventDefault();
+      zone.classList.remove('over');
+      const file = e.dataTransfer.files[0];
+      if (file) loadFile(file, zone, fnameId, key);
+    });
+    input.addEventListener('change', e => {
+      if (e.target.files[0]) loadFile(e.target.files[0], zone, fnameId, key);
+    });
+  }
 
+  function loadFile(file, zone, fnameId, key) {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const data = parseCSV(ev.target.result);
+      if (key === 'planned') plannedData = data;
+      else actualData = data;
+      zone.classList.add('loaded');
+      zone.querySelector('i').className = 'ti ti-circle-check';
+      document.getElementById(fnameId).textContent = file.name + ' (' + data.length + ' rows)';
+      checkReady();
+    };
+    reader.readAsText(file);
+  }
+
+  function checkReady() {
+    const ready = plannedData && actualData;
+    document.getElementById('run-btn').disabled = !ready;
+    document.getElementById('run-status').textContent = ready
+      ? 'Both files loaded — ready to run'
+      : 'Upload both files to begin';
+  }
+
+  setupZone('zone-planned', 'input-planned', 'fname-planned', 'planned');
+  setupZone('zone-actual', 'input-actual', 'fname-actual', 'actual');
+
+  function log(msg) {
+    const el = document.getElementById('analysis-log');
+    el.textContent += msg + '\n';
+    el.scrollTop = el.scrollHeight;
+  }
+
+  function setStep(n) {
+    [1,2,3].forEach(i => {
+      const el = document.getElementById('step' + i);
+      el.classList.remove('active', 'done');
+      if (i < n) el.classList.add('done');
+      if (i === n) el.classList.add('active');
+    });
+  }
+
+  async function runAgent() {
+    const apiKey = document.getElementById('api-key').value.trim();
+    if (!apiKey) { alert('Please enter your Anthropic API key.'); return; }
+
+    setStep(2);
+    document.getElementById('run-btn').disabled = true;
+    document.getElementById('run-status').textContent = 'Agent running…';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('analysis-log').textContent = '';
+    document.getElementById('stat-grid').innerHTML = '';
+    document.getElementById('anomaly-list').innerHTML = '';
+
+    log('Step 1 — joining planned and actual data on order_id...');
+    await sleep(300);
+
+    // Join on order_id
+    const plannedMap = {};
+    plannedData.forEach(r => plannedMap[r.order_id] = r);
+
+    const joined = [];
+    let matchCount = 0;
+    actualData.forEach(r => {
+      const p = plannedMap[r.order_id];
+      if (p) {
+        matchCount++;
+        joined.push({ ...p, ...r });
+      }
+    });
+    log(`  Matched ${matchCount} of ${actualData.length} actual records to planned records`);
+    await sleep(200);
+
+    log('Step 2 — calculating variances...');
+    await sleep(200);
+
+    joined.forEach(r => {
+      r.variance_days = parseInt(r.actual_lead_time_days) - parseInt(r.planned_lead_time_days);
+      r.variance_pct = ((r.variance_days / parseInt(r.planned_lead_time_days)) * 100).toFixed(1);
+    });
+    log(`  Variance calculated for ${joined.length} orders`);
+    await sleep(200);
+
+    log('Step 3 — applying anomaly detection rules...');
+    await sleep(300);
+
+    // Ask Claude to define the thresholds
+    log('  Calling Claude to determine anomaly thresholds based on data profile...');
+    const sample = joined.slice(0, 30).map(r => ({
+      sku: r.sku, planned: r.planned_lead_time_days, actual: r.actual_lead_time_days, variance_pct: r.variance_pct
+    }));
+
+    let thresholds = { high_pct: 60, medium_pct: 25, early_pct: -20 };
+    try {
+      const resp = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true'
+        },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 300,
+          messages: [{
+            role: 'user',
+            content: `You are a supply chain analyst. Given this sample of lead time variance data, recommend anomaly detection thresholds. Return ONLY a JSON object with keys: high_pct (variance % above which = high severity spike), medium_pct (variance % above which = moderate delay), early_pct (variance % below which = early delivery, use negative number). Base it on the data distribution. Sample: ${JSON.stringify(sample)}`
+          }]
+        })
+      });
+      const data = await resp.json();
+      const text = data.content?.find(b => b.type === 'text')?.text || '';
+      const match = text.match(/\{[\s\S]*\}/);
+      if (match) {
+        const parsed = JSON.parse(match[0]);
+        thresholds = { ...thresholds, ...parsed };
+      }
+    } catch(e) {}
+
+    log(`  Thresholds: spike >${thresholds.high_pct}%, moderate delay >${thresholds.medium_pct}%, early <${thresholds.early_pct}%`);
+    await sleep(200);
+
+    // Apply thresholds
+    analyzed = [];
+    joined.forEach(r => {
+      const pct = parseFloat(r.variance_pct);
+      if (pct >= thresholds.high_pct) {
+        r.anomaly_type = 'spike'; r.severity = 'high';
+        analyzed.push(r);
+      } else if (pct >= thresholds.medium_pct) {
+        r.anomaly_type = 'moderate_delay'; r.severity = 'medium';
+        analyzed.push(r);
+      } else if (pct <= thresholds.early_pct) {
+        r.anomaly_type = 'early_delivery'; r.severity = 'low';
+        analyzed.push(r);
+      }
+    });
+
+    log(`  Flagged ${analyzed.length} anomalies from ${joined.length} total orders`);
+    log(`  High: ${analyzed.filter(r=>r.severity==='high').length}  Medium: ${analyzed.filter(r=>r.severity==='medium').length}  Early: ${analyzed.filter(r=>r.anomaly_type==='early_delivery').length}`);
+    await sleep(300);
+
+    log('Step 4 — summarizing factory patterns...');
+    await sleep(200);
+
+    const factories = {};
+    analyzed.forEach(r => {
+      if (!factories[r.factory]) factories[r.factory] = { high: 0, medium: 0, early: 0 };
+      factories[r.factory][r.severity || 'early']++;
+    });
+    Object.entries(factories).forEach(([f, counts]) => {
+      log(`  ${f}: ${counts.high} high, ${counts.medium} medium, ${counts.early} early`);
+    });
+    await sleep(200);
+
+    log('\nAnalysis complete. Select an anomaly to draft an email.');
+
+    // Stats
+    const affectedFactories = new Set(analyzed.map(r => r.factory));
+    document.getElementById('stat-grid').innerHTML = [
+      { val: joined.length, lbl: 'Orders analyzed' },
+      { val: analyzed.length, lbl: 'Anomalies flagged' },
+      { val: analyzed.filter(r => r.severity === 'high').length, lbl: 'High severity' },
+      { val: affectedFactories.size, lbl: 'Factories affected' },
+    ].map(s => `<div class="stat"><div class="stat-val">${s.val}</div><div class="stat-lbl">${s.lbl}</div></div>`).join('');
+
+    setStep(3);
+    document.getElementById('run-btn').disabled = false;
+    document.getElementById('run-status').textContent = 'Done — select an anomaly below';
+
+    selectedIdx = null;
+    activeFilter = 'all';
     renderFilters();
     renderList();
+    renderEmailPanel();
+  }
+
+  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+  function filtered() {
+    if (activeFilter === 'all') return analyzed;
+    if (activeFilter === 'high' || activeFilter === 'medium') return analyzed.filter(r => r.severity === activeFilter);
+    return analyzed.filter(r => r.anomaly_type === activeFilter);
   }
 
   function renderFilters() {
@@ -403,12 +468,6 @@
     renderList();
   }
 
-  function filtered() {
-    if (activeFilter === 'all') return allAnomalies;
-    if (activeFilter === 'high' || activeFilter === 'medium') return allAnomalies.filter(r => r.severity === activeFilter);
-    return allAnomalies.filter(r => r.anomaly_type === activeFilter);
-  }
-
   function renderList() {
     const rows = filtered();
     const list = document.getElementById('anomaly-list');
@@ -416,20 +475,20 @@
       list.innerHTML = '<div class="empty">No anomalies match this filter.</div>';
       return;
     }
-    list.innerHTML = rows.slice(0, 50).map((r, i) => {
-      const globalIdx = allAnomalies.indexOf(r);
+    list.innerHTML = rows.slice(0, 60).map(r => {
+      const gIdx = analyzed.indexOf(r);
       const sign = parseFloat(r.variance_days) > 0 ? '+' : '';
-      const varClass = parseFloat(r.variance_days) > 0 ? 'var-positive' : 'var-negative';
-      const isSelected = selectedIdx === globalIdx;
-      return `
-        <div class="anomaly-row ${isSelected ? 'selected' : ''}" onclick="selectRow(${globalIdx})">
-          <span class="sev-badge sev-${r.severity || 'low'}">${r.severity || r.anomaly_type.replace(/_/g,' ')}</span>
-          <div class="anomaly-info">
-            <div class="anomaly-name">${r.product_name} <span>${r.order_id}</span></div>
-            <div class="anomaly-meta">${r.factory} &middot; ${r.order_date}</div>
-          </div>
-          <div class="anomaly-variance ${varClass}">${sign}${r.variance_days}d (${sign}${r.variance_pct}%)</div>
-        </div>`;
+      const varClass = parseFloat(r.variance_days) > 0 ? 'pos' : 'neg';
+      const isSelected = selectedIdx === gIdx;
+      const notes = r.receiving_notes ? ` · ${r.receiving_notes}` : '';
+      return `<div class="anomaly-row ${isSelected ? 'selected' : ''}" onclick="selectRow(${gIdx})">
+        <span class="sev sev-${r.severity || 'low'}">${r.severity || 'low'}</span>
+        <div class="anom-info">
+          <div class="anom-name">${r.product_name} <span>${r.order_id}</span></div>
+          <div class="anom-meta">${r.factory} · ${r.order_date}${notes}</div>
+        </div>
+        <div class="anom-var ${varClass}">${sign}${r.variance_days}d (${sign}${r.variance_pct}%)</div>
+      </div>`;
     }).join('');
   }
 
@@ -441,38 +500,38 @@
   }
 
   function renderEmailPanel() {
-    const r = allAnomalies[selectedIdx];
+    const panel = document.getElementById('email-panel');
+    if (selectedIdx === null) {
+      panel.innerHTML = `<div class="email-prompt"><i class="ti ti-arrow-up" aria-hidden="true"></i>Select an anomaly above to draft an email</div>`;
+      return;
+    }
+    const r = analyzed[selectedIdx];
     const toEmail = r.factory.toLowerCase().replace(/\s+/g, '') + '@supplier.com';
     const sign = parseFloat(r.variance_days) > 0 ? '+' : '';
 
-    document.getElementById('email-panel').innerHTML = `
-      <div class="email-header">
-        <div class="email-fields">
-          <div class="email-field"><span class="email-field-lbl">To</span><span class="email-field-val">${toEmail}</span></div>
-          <div class="email-field"><span class="email-field-lbl">Re</span><span class="email-field-val">${r.order_id} &middot; ${r.product_name}</span></div>
-          <div class="email-field"><span class="email-field-lbl">Flag</span><span class="email-field-val">${r.anomaly_type.replace(/_/g,' ')} &middot; ${sign}${r.variance_days} days (${sign}${r.variance_pct}%)</span></div>
+    panel.innerHTML = `
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:1rem;">
+        <div class="email-meta">
+          <div class="ef"><span class="ef-lbl">To</span><span>${toEmail}</span></div>
+          <div class="ef"><span class="ef-lbl">Re</span><span>${r.order_id} · ${r.product_name}</span></div>
+          <div class="ef"><span class="ef-lbl">Flag</span><span>${r.anomaly_type.replace(/_/g,' ')} · ${sign}${r.variance_days}d (${sign}${r.variance_pct}%)</span></div>
+          ${r.receiving_notes ? `<div class="ef"><span class="ef-lbl">Note</span><span style="color:var(--text2)">${r.receiving_notes}</span></div>` : ''}
         </div>
-        <button class="btn btn-primary" onclick="generateEmail()">
-          <i class="ti ti-sparkles" aria-hidden="true"></i> Draft with AI
-        </button>
+        <button class="btn btn-primary" onclick="generateEmail()"><i class="ti ti-sparkles" aria-hidden="true"></i> Draft with AI</button>
       </div>
-      <hr class="email-divider">
+      <div class="divider"></div>
       <div class="email-body placeholder" id="email-body">Click "Draft with AI" to generate the email</div>
       <div class="btn-row" id="btn-row" style="display:none;">
         <button class="btn" onclick="copyEmail()"><i class="ti ti-copy" aria-hidden="true"></i> Copy</button>
         <button class="btn" onclick="generateEmail()"><i class="ti ti-refresh" aria-hidden="true"></i> Regenerate</button>
-      </div>
-    `;
+      </div>`;
   }
 
   async function generateEmail() {
     const apiKey = document.getElementById('api-key').value.trim();
-    if (!apiKey) {
-      alert('Please enter your Anthropic API key above.');
-      return;
-    }
+    if (!apiKey) { alert('Please enter your Anthropic API key.'); return; }
 
-    const r = allAnomalies[selectedIdx];
+    const r = analyzed[selectedIdx];
     const sign = parseFloat(r.variance_days) > 0 ? '+' : '';
     const bodyEl = document.getElementById('email-body');
     const btnRow = document.getElementById('btn-row');
@@ -481,29 +540,34 @@
     bodyEl.innerHTML = '<div class="loading"><div class="spinner"></div>Drafting email…</div>';
     btnRow.style.display = 'none';
 
-    const prompt = `You are a supply chain analyst at a bottled water company. Draft a professional but direct email to a supplier factory about a lead time anomaly.
+    // Build factory context — how many issues has this factory had?
+    const factoryIssues = analyzed.filter(a => a.factory === r.factory && a.severity !== 'low');
+    const factoryHighCount = factoryIssues.filter(a => a.severity === 'high').length;
 
-Anomaly details:
+    const prompt = `You are a supply chain analyst at a bottled water company. Draft a professional email to a supplier about a lead time anomaly.
+
+Order details:
 - Order ID: ${r.order_id}
 - Product: ${r.product_name}
 - Factory: ${r.factory}
 - Order date: ${r.order_date}
-- Baseline lead time: ${r.baseline_lead_time_days} days
+- Planned lead time: ${r.planned_lead_time_days} days (planned delivery: ${r.planned_delivery_date})
 - Actual lead time: ${r.actual_lead_time_days} days
 - Variance: ${sign}${r.variance_days} days (${sign}${r.variance_pct}%)
 - Anomaly type: ${r.anomaly_type.replace(/_/g, ' ')}
 - Severity: ${r.severity}
+${r.receiving_notes ? `- Receiving notes: ${r.receiving_notes}` : ''}
 
-Instructions:
-- For spikes or high severity: firm but professional tone, request explanation and corrective action plan
-- For moderate delays: concerned but collaborative tone, ask for updated timeline
-- For early delivery: positive but flag potential receiving and warehouse space issues
-- Keep it concise, 3-4 short paragraphs max
-- Include a specific ask or next step at the end
-- Do not use placeholders like [NAME] — write it as if ready to send
-- Sign off as "Supply Chain Team, Niagara Bottling"
+Factory context:
+- This factory has ${factoryIssues.length} total delays flagged this period, including ${factoryHighCount} high-severity spikes
 
-Write only the email body, no subject line.`;
+Tone guidance:
+- High severity or repeated issues: firm, professional, request written explanation and corrective action plan within 5 business days
+- Moderate delay: collaborative, ask for updated ETA and root cause
+- Early delivery: appreciative but flag potential receiving/warehouse space constraints
+- If receiving notes mention damage or quality hold, reference that specifically
+
+Write 3-4 concise paragraphs. End with a clear ask and timeline. Sign off as "Supply Chain Team, Niagara Bottling". No subject line, no placeholders.`;
 
     try {
       const resp = await fetch('https://api.anthropic.com/v1/messages', {
@@ -520,29 +584,25 @@ Write only the email body, no subject line.`;
           messages: [{ role: 'user', content: prompt }]
         })
       });
-
-      if (!resp.ok) {
-        const err = await resp.json();
-        throw new Error(err.error?.message || `API error ${resp.status}`);
-      }
-
+      if (!resp.ok) { const e = await resp.json(); throw new Error(e.error?.message || 'API error'); }
       const data = await resp.json();
-      generatedEmail = data.content?.find(b => b.type === 'text')?.text || 'No response received.';
+      generatedEmail = data.content?.find(b => b.type === 'text')?.text || 'No response.';
+      bodyEl.className = 'email-body';
       bodyEl.textContent = generatedEmail;
       btnRow.style.display = 'flex';
-
-    } catch (err) {
-      bodyEl.textContent = 'Error: ' + err.message;
+    } catch(err) {
+      bodyEl.className = 'email-body';
       bodyEl.style.color = '#A32D2D';
+      bodyEl.textContent = 'Error: ' + err.message;
     }
   }
 
   function copyEmail() {
     if (!generatedEmail) return;
     navigator.clipboard.writeText(generatedEmail).then(() => {
-      const toast = document.getElementById('toast');
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 2000);
+      const t = document.getElementById('toast');
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2000);
     });
   }
 </script>
